@@ -98,8 +98,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check-Int Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jU3-I9-llA">
-                                                    <rect key="frame" x="16" y="11" width="115.5" height="20.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check-In Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jU3-I9-llA">
+                                                    <rect key="frame" x="16" y="11" width="110" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -112,8 +112,10 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jU3-I9-llA" secondAttribute="trailing" constant="20" symbolic="YES" id="EoT-4L-pay"/>
                                                 <constraint firstAttribute="trailing" secondItem="0SQ-Or-8Al" secondAttribute="trailing" constant="16" id="FxB-9B-uqy"/>
                                                 <constraint firstItem="jU3-I9-llA" firstAttribute="centerY" secondItem="Pxe-nx-hP6" secondAttribute="centerY" id="VWp-zg-Cuj"/>
+                                                <constraint firstItem="0SQ-Or-8Al" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Pxe-nx-hP6" secondAttribute="leading" constant="20" symbolic="YES" id="bLB-Wb-p0q"/>
                                                 <constraint firstItem="0SQ-Or-8Al" firstAttribute="centerY" secondItem="jU3-I9-llA" secondAttribute="centerY" id="sF3-vA-KkB"/>
                                                 <constraint firstItem="jU3-I9-llA" firstAttribute="leading" secondItem="Pxe-nx-hP6" secondAttribute="leading" constant="16" id="x2u-ZG-qgz"/>
                                             </constraints>
@@ -131,6 +133,9 @@
                                                     <date key="date" timeIntervalSinceReferenceDate="534862679.04820597">
                                                         <!--2017-12-13 12:57:59 +0000-->
                                                     </date>
+                                                    <connections>
+                                                        <action selector="datePickerChanged:" destination="6DJ-LA-Zfx" eventType="valueChanged" id="j6d-j2-eJX"/>
+                                                    </connections>
                                                 </datePicker>
                                             </subviews>
                                             <constraints>
@@ -148,24 +153,26 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check-Int Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nav-xX-RSq">
-                                                    <rect key="frame" x="32" y="11" width="115.5" height="20.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check-Out Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nav-xX-RSq">
+                                                    <rect key="frame" x="32" y="11" width="124.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Fk-GH-1T7">
-                                                    <rect key="frame" x="301" y="11" width="42" height="20"/>
+                                                    <rect key="frame" x="317" y="11" width="42" height="20"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="5Fk-GH-1T7" firstAttribute="centerY" secondItem="nav-xX-RSq" secondAttribute="centerY" id="LJ7-Dw-Vdh"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nav-xX-RSq" secondAttribute="trailingMargin" id="1W3-yN-H4Y"/>
+                                                <constraint firstItem="5Fk-GH-1T7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="IBW-AJ-iA9" secondAttribute="leadingMargin" id="30T-za-w3h"/>
                                                 <constraint firstItem="nav-xX-RSq" firstAttribute="centerY" secondItem="IBW-AJ-iA9" secondAttribute="centerY" id="QDk-HA-VNy"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="5Fk-GH-1T7" secondAttribute="trailing" constant="16" id="XRk-8k-8Hy"/>
                                                 <constraint firstItem="nav-xX-RSq" firstAttribute="leading" secondItem="IBW-AJ-iA9" secondAttribute="leadingMargin" constant="16" id="nIS-qP-ygZ"/>
+                                                <constraint firstItem="5Fk-GH-1T7" firstAttribute="centerY" secondItem="nav-xX-RSq" secondAttribute="centerY" id="ng0-Qv-ynO"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="5Fk-GH-1T7" secondAttribute="trailing" id="p8d-7g-qdN"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -177,10 +184,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="1fj-0c-W3C">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="215.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
                                                     <date key="date" timeIntervalSinceReferenceDate="534862683.08982903">
                                                         <!--2017-12-13 12:58:03 +0000-->
                                                     </date>
+                                                    <connections>
+                                                        <action selector="datePickerChanged:" destination="6DJ-LA-Zfx" eventType="valueChanged" id="ezr-30-mzp"/>
+                                                    </connections>
                                                 </datePicker>
                                             </subviews>
                                             <constraints>
@@ -243,6 +253,10 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="checkOutDate" destination="5Fk-GH-1T7" id="p4S-xD-svf"/>
+                        <outlet property="checkinDate" destination="0SQ-Or-8Al" id="Wtj-5v-dsW"/>
+                        <outlet property="checkinDatePicker" destination="6pd-jH-rKg" id="pON-dv-W4x"/>
+                        <outlet property="checkoutDatePicker" destination="1fj-0c-W3C" id="e3f-pH-d1A"/>
                         <outlet property="firstNameTextField" destination="pdA-EG-qFG" id="Le0-Bh-WHl"/>
                         <outlet property="lastName" destination="Qy2-65-RF9" id="fNN-a0-gLv"/>
                         <outlet property="mailTextField" destination="s8x-Qn-O2n" id="W69-AI-Zez"/>

@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
-                            <tableViewSection headerTitle="Section-1" id="haz-mF-B5F">
+                            <tableViewSection headerTitle="Details" id="haz-mF-B5F">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Oeu-0P-WIS">
                                         <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
@@ -89,7 +89,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Section-2" id="aRG-bc-Jra">
+                            <tableViewSection headerTitle="Check-In/Check-Out" id="aRG-bc-Jra">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="zbv-XN-eph">
                                         <rect key="frame" x="0.0" y="243.5" width="375" height="44"/>
@@ -154,7 +154,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check-Out Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nav-xX-RSq">
-                                                    <rect key="frame" x="32" y="11" width="124.5" height="20.5"/>
+                                                    <rect key="frame" x="16" y="11" width="125" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -167,12 +167,10 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nav-xX-RSq" secondAttribute="trailingMargin" id="1W3-yN-H4Y"/>
-                                                <constraint firstItem="5Fk-GH-1T7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="IBW-AJ-iA9" secondAttribute="leadingMargin" id="30T-za-w3h"/>
-                                                <constraint firstItem="nav-xX-RSq" firstAttribute="centerY" secondItem="IBW-AJ-iA9" secondAttribute="centerY" id="QDk-HA-VNy"/>
-                                                <constraint firstItem="nav-xX-RSq" firstAttribute="leading" secondItem="IBW-AJ-iA9" secondAttribute="leadingMargin" constant="16" id="nIS-qP-ygZ"/>
-                                                <constraint firstItem="5Fk-GH-1T7" firstAttribute="centerY" secondItem="nav-xX-RSq" secondAttribute="centerY" id="ng0-Qv-ynO"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="5Fk-GH-1T7" secondAttribute="trailing" id="p8d-7g-qdN"/>
+                                                <constraint firstItem="5Fk-GH-1T7" firstAttribute="centerY" secondItem="nav-xX-RSq" secondAttribute="centerY" id="272-2K-6DY"/>
+                                                <constraint firstItem="nav-xX-RSq" firstAttribute="centerY" secondItem="IBW-AJ-iA9" secondAttribute="centerY" id="AI5-C2-2dO"/>
+                                                <constraint firstItem="nav-xX-RSq" firstAttribute="leading" secondItem="IBW-AJ-iA9" secondAttribute="leadingMargin" id="Cdo-yS-xWq"/>
+                                                <constraint firstItem="5Fk-GH-1T7" firstAttribute="trailing" secondItem="IBW-AJ-iA9" secondAttribute="trailingMargin" id="ljW-HR-F8X"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -203,7 +201,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Section-3" id="8ea-gU-p5E">
+                            <tableViewSection headerTitle="Visitors" id="8ea-gU-p5E">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="USa-V7-v43">
                                         <rect key="frame" x="0.0" y="819.5" width="375" height="44"/>
@@ -215,7 +213,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Section-4" id="7Xf-S0-zKW">
+                            <tableViewSection headerTitle="Wifi" id="7Xf-S0-zKW">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="zdF-dB-rvu">
                                         <rect key="frame" x="0.0" y="919.5" width="375" height="44"/>

@@ -143,6 +143,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="blx-YG-D3T"/>
+                    <connections>
+                        <outlet property="firstNameTextField" destination="pdA-EG-qFG" id="Le0-Bh-WHl"/>
+                        <outlet property="lastName" destination="Qy2-65-RF9" id="fNN-a0-gLv"/>
+                        <outlet property="mailTextField" destination="s8x-Qn-O2n" id="W69-AI-Zez"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rHA-1P-Ynb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

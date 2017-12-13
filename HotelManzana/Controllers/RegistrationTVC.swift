@@ -16,6 +16,10 @@ class RegistrationTVC: UITableViewController {
     
     @IBOutlet weak var mailTextField: UITextField!
     
+    @IBAction func doneBarButton(_ sender: UIBarButtonItem)
+    {
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

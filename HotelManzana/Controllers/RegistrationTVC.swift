@@ -21,6 +21,14 @@ class RegistrationTVC: UITableViewController {
     @IBOutlet weak var numberOfChildren: UILabel!
     
     @IBOutlet weak var numberOfChildrenStepper: UIStepper!
+    
+    
+    
+    @IBOutlet weak var wifiSwitch: UISwitch!
+    
+    @IBOutlet weak var roomTypeLabel: UILabel!
+    
+    
     let checkInDatePickerCellIndexPath = IndexPath(row: 1, section:1)
     let checkOutDatePickerCellIndexPath = IndexPath(row: 3, section:1)
     
@@ -111,10 +119,27 @@ class RegistrationTVC: UITableViewController {
         let firstName = firstNameTextField.text ?? ""
         let lastName = self.lastName.text ?? ""
         let email = mailTextField.text ?? ""
+        let checkInDate = checkinDatePicker.date
+        let checkOutDate = checkoutDatePicker.date
         
-        print(firstName)
-        print(lastName)
-        print(email)
+        let numberOfAdults = self.numberOfAdults.text
+        let numberOfChildren = self.numberOfChildren.text
+        let hasWifi = wifiSwitch.isOn
+        
+        
+        
+        
+        print("First Name: \(firstName)")
+        print("Last Name: \(lastName)")
+        print("Email: \(email)")
+        
+        print("check in date: \(checkInDate)")
+        print("check out date: \(checkOutDate)")
+        
+        print("numberOfAdults: \(numberOfAdults)")
+        print("numberOfChildren: \(numberOfChildren)")
+        
+        print("Wifi: \(hasWifi)")
     }
     
     func updateDateView () {
@@ -167,5 +192,11 @@ class RegistrationTVC: UITableViewController {
         
         
     }
+    
+    @IBAction func wifiSwitchChanged(_ sender: Any) {
+    }
+    
+    
+    
     
 }

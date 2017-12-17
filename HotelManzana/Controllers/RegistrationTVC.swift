@@ -16,6 +16,11 @@ class RegistrationTVC: UITableViewController {
     
     @IBOutlet weak var mailTextField: UITextField!
     
+    @IBOutlet weak var numberOfAdults: UILabel!
+    @IBOutlet weak var numberOfAdultStepper: UIStepper!
+    @IBOutlet weak var numberOfChildren: UILabel!
+    
+    @IBOutlet weak var numberOfChildrenStepper: UIStepper!
     let checkInDatePickerCellIndexPath = IndexPath(row: 1, section:1)
     let checkOutDatePickerCellIndexPath = IndexPath(row: 3, section:1)
     
@@ -148,4 +153,19 @@ class RegistrationTVC: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
+    
+    func updateNumberOfGuests() {
+        
+        numberOfAdults.text = "\(Int(numberOfAdultStepper.value))"
+        numberOfChildren.text = "\(Int(numberOfChildrenStepper.value))"
+    }
+    
+    
+    @IBAction func stepperValueChanged(_ sender: Any) {
+        
+        updateNumberOfGuests()
+        
+        
+    }
+    
 }

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		85B798931FE152EC00CC2EC0 /* RegistrationTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B798921FE152EC00CC2EC0 /* RegistrationTVC.swift */; };
 		85B798B71FE69B7000CC2EC0 /* SelectRoomTypeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B798B61FE69B7000CC2EC0 /* SelectRoomTypeTableViewController.swift */; };
+		85B798B91FE6ABD600CC2EC0 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B798B81FE6ABD600CC2EC0 /* ListTableViewController.swift */; };
 		E35B77691FE1213F00E6BBFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35B77681FE1213F00E6BBFC /* AppDelegate.swift */; };
 		E35B776E1FE1213F00E6BBFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E35B776C1FE1213F00E6BBFC /* Main.storyboard */; };
 		E35B77701FE1213F00E6BBFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E35B776F1FE1213F00E6BBFC /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		85B798921FE152EC00CC2EC0 /* RegistrationTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationTVC.swift; sourceTree = "<group>"; };
 		85B798B61FE69B7000CC2EC0 /* SelectRoomTypeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectRoomTypeTableViewController.swift; sourceTree = "<group>"; };
+		85B798B81FE6ABD600CC2EC0 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		E35B77651FE1213F00E6BBFC /* HotelManzana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotelManzana.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E35B77681FE1213F00E6BBFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E35B776D1FE1213F00E6BBFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				85B798B61FE69B7000CC2EC0 /* SelectRoomTypeTableViewController.swift */,
+				85B798B81FE6ABD600CC2EC0 /* ListTableViewController.swift */,
 				85B798921FE152EC00CC2EC0 /* RegistrationTVC.swift */,
 			);
 			path = Controllers;
@@ -169,6 +172,7 @@
 				85B798B71FE69B7000CC2EC0 /* SelectRoomTypeTableViewController.swift in Sources */,
 				85B798931FE152EC00CC2EC0 /* RegistrationTVC.swift in Sources */,
 				E35B777B1FE1216300E6BBFC /* Registration.swift in Sources */,
+				85B798B91FE6ABD600CC2EC0 /* ListTableViewController.swift in Sources */,
 				E35B77691FE1213F00E6BBFC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

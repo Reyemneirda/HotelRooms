@@ -364,7 +364,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="ssp-ka-rha" kind="show" id="G4P-yN-qnW"/>
+                                            <segue destination="ssp-ka-rha" kind="show" identifier="SelectRoomType" id="G4P-yN-qnW"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -378,7 +378,7 @@
                     <navigationItem key="navigationItem" title="Root View Controller" id="blx-YG-D3T">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="n2M-Ve-yds">
                             <connections>
-                                <action selector="doneBarButton:" destination="6DJ-LA-Zfx" id="u16-3v-1ed"/>
+                                <segue destination="M7Q-rh-mcm" kind="unwind" unwindAction="unwindFromListWithUnwindSegue:" id="BOb-d1-mfI"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -399,8 +399,9 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rHA-1P-Ynb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="M7Q-rh-mcm" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="216.80000000000001" y="150.67466266866569"/>
+            <point key="canvasLocation" x="842" y="-878"/>
         </scene>
         <!--Select Room Type Table View Controller-->
         <scene sceneID="aUh-h8-pv7">
@@ -455,12 +456,79 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="6DJ-LA-Zfx" kind="relationship" relationship="rootViewController" id="brD-go-ICu"/>
+                        <segue destination="isl-Gy-7SQ" kind="relationship" relationship="rootViewController" id="YQo-NV-KeQ"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="94G-do-1Ch" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-735" y="151"/>
+        </scene>
+        <!--Registration-->
+        <scene sceneID="wDh-JN-UQP">
+            <objects>
+                <tableViewController id="isl-Gy-7SQ" customClass="ListTableViewController" customModule="HotelManzana" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="QH7-Yy-tvu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RegistrationCell" textLabel="ELc-s0-rXf" detailTextLabel="jCs-DO-vI3" style="IBUITableViewCellStyleSubtitle" id="Crl-5A-Vbu">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Crl-5A-Vbu" id="1hn-bt-fhG">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ELc-s0-rXf">
+                                            <rect key="frame" x="16" y="5" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jCs-DO-vI3">
+                                            <rect key="frame" x="16" y="25.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="isl-Gy-7SQ" id="Qxq-W9-wvd"/>
+                            <outlet property="delegate" destination="isl-Gy-7SQ" id="dJl-SQ-cQI"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Registration" id="9ed-1d-2SX">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="HAw-j2-wGn">
+                            <connections>
+                                <segue destination="JjQ-mh-YnC" kind="presentation" id="TvN-yZ-e6h"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0jo-5w-JhR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="62" y="151"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6HA-XH-4Na">
+            <objects>
+                <navigationController id="JjQ-mh-YnC" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tNd-Rm-YUS">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="6DJ-LA-Zfx" kind="relationship" relationship="rootViewController" id="gCF-66-60q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wqL-w6-oMV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-434" y="-878"/>
         </scene>
     </scenes>
 </document>

@@ -8,7 +8,8 @@
 
 import UIKit
 
-class RegistrationTVC: UITableViewController {
+class RegistrationTVC: UITableViewController
+{
 
     @IBOutlet weak var firstNameTextField: UITextField!
     
@@ -22,7 +23,7 @@ class RegistrationTVC: UITableViewController {
     
     @IBOutlet weak var numberOfChildrenStepper: UIStepper!
     
-    
+    var roomType: RoomType?
     
     @IBOutlet weak var wifiSwitch: UISwitch!
     
@@ -114,33 +115,34 @@ class RegistrationTVC: UITableViewController {
        
     }
     
-    @IBAction func doneBarButton(_ sender: UIBarButtonItem)
-    {
+    var registration: Registration? {
+        guard let roomType = roomType else { return nil }
+        
+  
         let firstName = firstNameTextField.text ?? ""
         let lastName = self.lastName.text ?? ""
         let email = mailTextField.text ?? ""
         let checkInDate = checkinDatePicker.date
         let checkOutDate = checkoutDatePicker.date
         
-        let numberOfAdults = self.numberOfAdults.text
-        let numberOfChildren = self.numberOfChildren.text
+        let numberOfAdults = self.numberOfAdults.text ?? ""
+        let numberOfChildren = self.numberOfChildren.text ?? ""
         let hasWifi = wifiSwitch.isOn
         
         
-        
-        
-        print("First Name: \(firstName)")
-        print("Last Name: \(lastName)")
-        print("Email: \(email)")
-        
-        print("check in date: \(checkInDate)")
-        print("check out date: \(checkOutDate)")
-        
-        print("numberOfAdults: \(numberOfAdults)")
-        print("numberOfChildren: \(numberOfChildren)")
-        
-        print("Wifi: \(hasWifi)")
+        return Registration(firstName: firstName,
+                            lastName: lastName,
+                            emailAddress: email,
+                            checkInDate: checkInDate,
+                            checkOutDate: checkOutDate,
+                            numberOfAdults: Int(numberOfAdults)!,
+                            numberOfChildren: Int(numberOfChildren)!,
+                            roomType: roomType,
+                            wifi: hasWifi)
     }
+    
+
+    
     
     func updateDateView () {
         
